@@ -1,0 +1,9 @@
+     $startdate = $_POST['startdate'];
+            $enddate = $_POST['enddate'];
+            $datetime1 = new DateTime("$startdate");
+
+            $datetime2 = new DateTime("$enddate");
+
+            $difference = $datetime1->diff($datetime2);
+
+            echo $difference->d;
